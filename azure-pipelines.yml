@@ -5,7 +5,7 @@
 trigger:
 - main
 
-pool:SHPool
+pool: SHPool
 
 resources:
 - repo: self
