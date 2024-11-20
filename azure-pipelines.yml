@@ -5,8 +5,8 @@
 trigger:
 - main
 
-pool: LinuxPool
-
+pool:
+  name: LinuxPool
 
 resources:
 - repo: self
@@ -29,6 +29,7 @@ stages:
   - job: Build
     displayName: Build
     pool:
+      name: LinuxAgent
       vmImage: $(vmImageName)
     steps:
     - task: Docker@2
